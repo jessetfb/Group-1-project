@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 
-const AboutUs = () => {
+function AboutUs() {
     const [showContactInfo, setShowContactInfo] = useState(false);
 
-    const toggleContactInfo = () => {
+    function toggleContactInfo() {
         setShowContactInfo(!showContactInfo);
-    };
+    }
 
     return (
         <div className="about-us-container">
             <div className="about-us-section">
                 <h2>About Us</h2>
-                <p>Welcome to [Blog Name], your go-to destination for [topic or niche]. Our blog aims to [mission or vision statement].</p>
-                <p>Our team is comprised of passionate individuals who share a common interest in [topic or niche]. We are dedicated to providing high-quality content that informs, inspires, and entertains our readers.</p>
+                <p>Welcome to Cool Blog, your go-to destination for exploring sustainable travel adventures with tech-savvy tips and financial insights. Our blog aims to [mission or vision statement].</p>
+                <p>Our team is comprised of passionate individuals who share a common interest in Exploring Sustainable Travel Adventures with Tech-Savvy Tips and Financial Insights. We are dedicated to providing high-quality content that informs, inspires, and entertains our readers.</p>
                 <h3>Meet Our Team</h3>
                 <div className="team-members">
                     <div className="team-member">
@@ -47,12 +47,12 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <h3>Why Choose Us?</h3>
-                <p>At [Blog Name], we pride ourselves on our commitment to excellence. Here are a few reasons why you should choose us:</p>
                 <ul>
-                    <li>Expertise: Our team consists of industry experts who are passionate about [topic or niche].</li>
-                    <li>Quality Content: We strive to deliver well-researched, informative, and engaging content that adds value to our readers.</li>
-                    <li>Community: Join our community of like-minded individuals who share your passion for [topic or niche].</li>
-                    <li>Continuous Improvement: We are always seeking ways to improve and enhance the reader experience on our blog.</li>
+                    <li>Expertise: Our team consists of industry experts who are passionate about cybersecurity, photography, frontend, and backend development.</li>
+                    <li>Quality Content: We leverage our expertise in cybersecurity to ensure the safety and privacy of our readers, while our photography skills capture the essence of each travel adventure in stunning visuals.</li>
+                    <li>Community: Join our community of like-minded individuals who share your passion for exploring the world while staying informed about cybersecurity measures and enjoying visually appealing content.</li>
+                    <li>Continuous Improvement: We continuously enhance our frontend and backend development skills to deliver a seamless and interactive user experience, making it easier for our readers to navigate and engage with our content.</li>
+                    <li>Client-Centric Approach: Our goal is to help our clients receive the best services and information tailored to their needs, ensuring a personalized and satisfying experience.</li>
                 </ul>
             </div>
             {showContactInfo ? (
@@ -99,6 +99,6 @@ const AboutUs = () => {
             )}
         </div>
     );
-};
+}
 
 export default AboutUs;
