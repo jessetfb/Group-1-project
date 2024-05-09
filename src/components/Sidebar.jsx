@@ -6,11 +6,19 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarItem">
-        <span className="sidebarTitle">ABOUT ME</span>
-        <img className="profilePicture" src="media/IMG_0149.jpg" alt="" />
+      <img className="profilePicture" src="src/assets/cool2.jpeg" alt="cool_logo" /> 
+        <span className="flex justify-center text-3xl font-bold shadow-md "> COOl Blog🍹</span>
+        
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates,
-          harum.
+        Are you passionate about writing and sharing your voice with the world? 
+        Whether you're a seasoned writer or a budding wordsmith, 
+        we invite you to be a part of the Cool Blog community.
+         Share your stories, express your ideas, 
+         and connect with like-minded individuals who share your passion for creativity and knowledge. 
+         Together, let's make Cool Blog the coolest place on the internet for sharing ideas,
+          sparking conversations, and inspiring change.
+          - COOl Blog 🍹.
+
         </p>
       </div>
       <div className="sidebarItem">
