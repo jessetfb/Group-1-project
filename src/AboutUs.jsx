@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './index.css' 
 function AboutUs() {
     const [showContactInfo, setShowContactInfo] = useState(false);
 
@@ -71,7 +71,7 @@ function AboutUs() {
                                 <li>Twitter: [Twitter Link]</li>
                             </ul>
                         </li>
-                    </ul>
+                    <  /ul>
                     <form id="contact-form">
                         <div>
                             <label htmlFor="name">Name:</label>
