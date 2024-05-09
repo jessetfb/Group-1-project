@@ -1,4 +1,4 @@
-import FooterContainer from "./components/FooterContainer";
+import Sidebar from "./components/Sidebar";
 
 
 function App() {
@@ -6,10 +6,9 @@ function App() {
 
   return (
     <>
-       <div>
-      <div className="h-screen"></div>
-      <FooterContainer />
-    </div>
+    
+      <Sidebar />
+    
     </>
   );
 }
