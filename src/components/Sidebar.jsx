@@ -2,25 +2,26 @@ import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 import "./sidebar.css";
 
+
 function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarItem">
-        <img className="profilePicture" src="src/assets/cool2.jpeg" alt="cool_logo" />
+      <img className="profilePicture w-3/4 h-48 object-cover" src="src/assets/cool2.jpeg" alt="cool_logo" />
         <span className="flex justify-center text-3xl font-bold shadow-md hover:text-blue-500 cursor-pointer"> 
          COOl Blog🍹
          </span>
 
-         <div class="bg-slate-400 rounded- shadow-md p-3 text-center"> 
-  <h2 class="text-yellow-800 text-2xl font-bold mb-4">Are you passionate about writing and sharing your voice with the world?</h2>
-  <p class="text-yellow-800 mb-4">Whether you're a seasoned writer or a budding wordsmith, we invite you to be a part of the Cool Blog community.</p>
-  <p class="text-yellow-800 mb-4">Share your stories, express your ideas, and connect with like-minded individuals who share your passion for creativity and knowledge.</p>
-  <p class="text-yellow-800 mb-4">Together, let's make Cool Blog the coolest place on the internet for sharing ideas, sparking conversations, and inspiring change.</p>
-  <p class="text-yellow-800 font-bold">- COOl Blog 🍹</p>
+         <div class="rounded-lg shadow-md p-3 text-center bg-indigo-300 "> 
+  <h2 class="text-yellow-800 text-2xl font-bold mb-4 hover:text-blue-950">Are you passionate about writing and sharing your voice with the world?</h2>
+  <p class="text-yellow-800 mb-4 hover:text-blue-950">Whether you're a seasoned writer or a budding wordsmith, we invite you to be a part of the Cool Blog community.</p>
+  <p class="text-yellow-800 mb-4 hover:text-blue-950">Share your stories, express your ideas, and connect with like-minded individuals who share your passion for creativity and knowledge.</p>
+  <p class="text-yellow-800 mb-4 hover:text-blue-950">Together, let's make Cool Blog the coolest place on the internet for sharing ideas, sparking conversations, and inspiring change.</p>
+  <p class="text-yellow-800 font-bold hover:text-blue-950">- COOl Blog 🍹</p>
 </div>
       </div>
       <div className="sidebarItem">
-        <span className="sidebarTitle text-lg font-bold mb-4 hover:text-cyan-700 text-gray-800 uppercase tracking-wide">CATEGORIES</span>
+        <span className="sidebarTitle text-lg font-bold mb-4 hover:text-cyan-700 text-gray-800 uppercase tracking-wide bg-slate-300">CATEGORIES</span>
 
         <ul className="sidebarList">
           <li className="sidebarListItem hover:text-blue-500 cursor-pointer font-bold italic ">Life</li>
@@ -33,7 +34,7 @@ function Sidebar() {
 
       </div>
       <div className="sidebarItem">
-        <span className="sidebarTitle text-lg font-bold mb-4 hover:text-cyan-700 text-gray-800 uppercase tracking-wide">FOLLOW US</span>
+        <span className="sidebarTitle text-lg font-bold mb-4 hover:text-cyan-700 text-gray-800 uppercase tracking-wide bg-slate-300">FOLLOW US</span>
         <footer className="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-12">
           <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
