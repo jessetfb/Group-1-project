@@ -12,12 +12,12 @@ function Sidebar() {
          COOl Blog🍹
          </span>
 
-         <div class="rounded-lg shadow-md p-3 text-center bg-indigo-300 "> 
+         <div class="bg-gradient-to-r from-blue-500 to-purple-500 text-white"> 
   <h2 class="text-yellow-800 text-2xl font-bold mb-4 hover:text-blue-950">Are you passionate about writing and sharing your voice with the world?</h2>
   <p class="text-yellow-800 mb-4 hover:text-blue-950">Whether you're a seasoned writer or a budding wordsmith, we invite you to be a part of the Cool Blog community.</p>
   <p class="text-yellow-800 mb-4 hover:text-blue-950">Share your stories, express your ideas, and connect with like-minded individuals who share your passion for creativity and knowledge.</p>
   <p class="text-yellow-800 mb-4 hover:text-blue-950">Together, let's make Cool Blog the coolest place on the internet for sharing ideas, sparking conversations, and inspiring change.</p>
-  <p class="text-yellow-800 font-bold hover:text-blue-950">- COOl Blog 🍹</p>
+  <p class="text-yellow-800 font-bold hover:text-blue-950 text-center">- COOl Blog 🍹</p>
 </div>
       </div>
       <div className="sidebarItem">
