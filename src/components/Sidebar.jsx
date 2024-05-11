@@ -1,37 +1,56 @@
-import React from "react";
+import React, { useState } from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
-import "./sidebar.css";
-
+import './sidebar.css';
 
 function Sidebar() {
+  const [email, setEmail] = useState('');
+  const [subscribed, setSubscribed] = useState(false);
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (!email) {
+      alert('Please enter your email');
+    } else {
+     
+      setSubscribed(true);
+      setTimeout(() => {
+        setSubscribed(false);
+        //reset
+        setEmail(''); 
+        // Reset after 5seconds
+      }, 5000); 
+    }
+  };
+
   return (
     <div className="sidebar">
       <div className="sidebarItem">
-      <img className="profilePicture w-3/4 h-48 object-cover" src="src/assets/cool2.jpeg" alt="cool_logo" />
-        <span className="flex justify-center text-3xl font-bold shadow-md hover:text-blue-500 cursor-pointer"> 
-         COOl Blog🍹
-         </span>
+        <img className="profilePicture w-3/4 h-48 object-cover" src="src/assets/cool2.jpeg" alt="cool_logo" />
+        <span className="flex justify-center text-3xl font-bold shadow-md hover:text-blue-500 cursor-pointer">COOl Blog🍹</span>
 
-         <div class="bg-gradient-to-r from-blue-500 to-purple-500 text-white"> 
-  <h2 class="text-yellow-800 text-2xl font-bold mb-4 hover:text-blue-950">Are you passionate about writing and sharing your voice with the world?</h2>
-  <p class="text-yellow-800 mb-4 hover:text-blue-950">Whether you're a seasoned writer or a budding wordsmith, we invite you to be a part of the Cool Blog community.</p>
-  <p class="text-yellow-800 mb-4 hover:text-blue-950">Share your stories, express your ideas, and connect with like-minded individuals who share your passion for creativity and knowledge.</p>
-  <p class="text-yellow-800 mb-4 hover:text-blue-950">Together, let's make Cool Blog the coolest place on the internet for sharing ideas, sparking conversations, and inspiring change.</p>
-  <p class="text-yellow-800 font-bold hover:text-blue-950 text-center">- COOl Blog 🍹</p>
-</div>
+        <div className="bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+          <h2 className="text-yellow-800 text-2xl font-bold mb-4 hover:text-blue-950">Are you passionate about writing and sharing your voice with the world?</h2>
+          <p className="text-yellow-800 mb-4 hover:text-blue-950">Whether you're a seasoned writer or a budding wordsmith, we invite you to be a part of the Cool Blog community.</p>
+          <p className="text-yellow-800 mb-4 hover:text-blue-950">Share your stories, express your ideas, and connect with like-minded individuals who share your passion for creativity and knowledge.</p>
+          <p className="text-yellow-800 mb-4 hover:text-blue-950">Together, let's make Cool Blog the coolest place on the internet for sharing ideas, sparking conversations, and inspiring change.</p>
+          <p className="text-yellow-800 font-bold hover:text-blue-950 text-center">- COOl Blog 🍹</p>
+        </div>
       </div>
       <div className="sidebarItem">
         <span className="sidebarTitle text-lg font-bold mb-4 hover:text-cyan-700 text-gray-800 uppercase tracking-wide bg-slate-300">CATEGORIES</span>
 
         <ul className="sidebarList">
-          <li className="sidebarListItem hover:text-blue-500 cursor-pointer font-bold italic ">Life</li>
-          <li className="sidebarListItem  hover:text-blue-500 cursor-pointer font-bold italic ">Movies</li>
-          <li className="sidebarListItem  hover:text-blue-500 cursor-pointer font-bold italic ">Sport</li>
-          <li className="sidebarListItem  hover:text-blue-500 cursor-pointer font-bold italic ">Style</li>
-          <li className="sidebarListItem  hover:text-blue-500 cursor-pointer font-bold italic ">Music</li>
-          <li className="sidebarListItem  hover:text-blue-500 cursor-pointer font-bold italic ">Tech</li>
+          <li className="sidebarListItem hover:text-blue-500 cursor-pointer font-bold italic">Life</li>
+          <li className="sidebarListItem hover:text-blue-500 cursor-pointer font-bold italic">Movies</li>
+          <li className="sidebarListItem hover:text-blue-500 cursor-pointer font-bold italic">Sport</li>
+          <li className="sidebarListItem hover:text-blue-500 cursor-pointer font-bold italic">Style</li>
+          <li className="sidebarListItem hover:text-blue-500 cursor-pointer font-bold italic">Music</li>
+          <li className="sidebarListItem hover:text-blue-500 cursor-pointer font-bold italic">Tech</li>
         </ul>
-
       </div>
       <div className="sidebarItem">
         <span className="sidebarTitle text-lg font-bold mb-4 hover:text-cyan-700 text-gray-800 uppercase tracking-wide bg-slate-300">FOLLOW US</span>
@@ -60,10 +79,12 @@ function Sidebar() {
             </div>
             <div>
               <h3 className="text-2xl font-bold mb-4 hover:text-stone-950">Subscribe to our newsletter</h3>
-              <form className="flex items-center">
+              <form onSubmit={handleSubmit} className="flex items-center">
                 <input
                   type="email"
                   placeholder="Enter your email"
+                  value={email}
+                  onChange={handleEmailChange}
                   className="bg-white text-gray-800 px-4 py-2 rounded-l-md focus:outline-none"
                 />
                 <button
@@ -73,6 +94,7 @@ function Sidebar() {
                   Subscribe
                 </button>
               </form>
+              {subscribed && <p className="text-green-500">You are now subscribed to the newsletter!</p>}
             </div>
           </div>
         </footer>
@@ -80,4 +102,5 @@ function Sidebar() {
     </div>
   );
 }
+
 export default Sidebar;
