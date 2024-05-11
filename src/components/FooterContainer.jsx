@@ -16,8 +16,7 @@ function FooterContainer() {
     if (!email) {
       setError('Please enter your email');
     } else {
-      // Simulate form submission (replace with actual submission logic)
-      // For demonstration, we'll set a timeout to show the subscribed message
+     
       setSubscribed(true);
       setTimeout(() => {
         setSubscribed(false);
