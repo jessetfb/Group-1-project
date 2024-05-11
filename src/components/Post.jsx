@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import Post from "./Post";
-import "./posts.css";
+import './../components/Post.css'
 import React from "react";
 
 function Posts() {
