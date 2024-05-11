@@ -21,7 +21,7 @@ function Sidebar() {
         setSubscribed(false);
         //reset
         setEmail(''); 
-        // Reset after 5seconds
+        // reset after 5seconds
       }, 5000); 
     }
   };
@@ -54,8 +54,8 @@ function Sidebar() {
       </div>
       <div className="sidebarItem">
         <span className="sidebarTitle text-lg font-bold mb-4 hover:text-cyan-700 text-gray-800 uppercase tracking-wide bg-slate-300">FOLLOW US</span>
-        <footer className="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-12">
-          <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        <footer className="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-12 hover:text-stone-950">
+          <div className="container mx-auto flex flex-col md:flex-row justify-between items-center ">
             <div className="mb-6 md:mb-0">
               <h3 className="text-2xl font-bold mb-4 hover:text-stone-950">Stay Connected</h3>
               <p className="text-lg hover:text-stone-950">Follow us on social media:</p>

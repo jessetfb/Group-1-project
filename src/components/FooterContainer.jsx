@@ -20,15 +20,17 @@ function FooterContainer() {
       setSubscribed(true);
       setTimeout(() => {
         setSubscribed(false);
-        setEmail(''); // Clear the email field
+        //resets
+        setEmail(''); 
         setError('');
-      }, 3000); // Reset after 3 seconds
+        // reset after 5 seconds
+      }, 5000); 
     }
   };
 
   return (
     <footer className="bg-gradient-to-r from-blue-300 to-purple-300 text-white py-12">
-      <h1 className='text-black font-serif text-2xl font-bold mb-2'>Welcome to COOl Blog🍹.... </h1>
+      <h1 className='text-black font-serif text-2xl font-bold mb-2 hover:text-rose-950'>Welcome to COOl Blog🍹.... </h1>
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center hover:text-stone-950">
         <span>
           <img className="profilePicture w-1/2 h-48 object-cover" src="src/assets/cool2.jpeg" alt="cool_logo" />
