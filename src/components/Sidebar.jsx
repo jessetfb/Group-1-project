@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
+//import { storeEmail } from '../data/database'; Refused to work
+import emailjs from 'emailjs-com';
+
+
 import './sidebar.css';
 
 function Sidebar() {
+  // my component logic
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
+
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -15,16 +21,37 @@ function Sidebar() {
     if (!email) {
       alert('Please enter your email');
     } else {
+
+      // stores email via EmaiJS, it collects user email contact, then sends email for subascribing to COOl Blog. 
+      sendSubscriptionEmail(email);
      
       setSubscribed(true);
       setTimeout(() => {
         setSubscribed(false);
         //reset
         setEmail(''); 
-        // reset after 5seconds
-      }, 5000); 
+        // reset after 3seconds
+      }, 3000); 
     }
   };
+
+  const sendSubscriptionEmail = (email) => {
+    emailjs
+      .send('service_id', 'template_8j8ytps', { recipient: email }, 'lizandrerw@gmail.com')
+      .then((response) => {
+        console.log('Email sent successfully:', response);
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error);
+      });
+  };
+
+  // Initialize EmailJS with my public key
+  const initEmailJS = () => {
+    emailjs.init('ciGLcpr6cJl8kpJnT');
+  };
+   // Call init function
+   initEmailJS();
 
   return (
     <div className="sidebar">
