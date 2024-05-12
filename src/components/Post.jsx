@@ -11,7 +11,7 @@ function Posts() {
   // useEffect hook to fetch posts data when the component mounts
   useEffect(() => {
     // Fetch posts data from the specified endpoint
-    fetch("http://localhost:3000/posts") // Assuming your json-server is running on port 3000
+    fetch("http://localhost:4000/posts") // Assuming your json-server is running on port 3000
       .then((response) => {
         // Check if the response is ok
         if (!response.ok) {
