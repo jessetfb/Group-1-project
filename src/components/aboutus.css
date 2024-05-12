@@ -1,0 +1,74 @@
+/* Body styling */
+body {
+  font-family: Arial, sans-serif; /* Set the font family */
+  color: #333; /* Set the default text color */
+  background-color: #f8f9fa; /* Set the background color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Container styling */
+.about-us-container {
+  margin: 20px auto; /* Center the container */
+  padding: 20px;
+  max-width: 800px; /* Set maximum width */
+  background-color: #fff; /* Set container background color */
+  border-radius: 10px; /* Add border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Heading styling */
+h2,
+h3 {
+  color: #007bff; /* Set heading text color */
+}
+
+h1 {
+  font-size: 2.5em; /* Increase font size for the blog name */
+}
+
+/* Paragraph styling */
+p {
+  line-height: 1.6; /* Set line height */
+}
+
+/* Additional styling */
+.about-us-section {
+  margin: 0 auto; /* Center the section horizontally */
+  max-width: 600px; /* Set a maximum width for the section */
+}
+
+.blog-name {
+  margin-bottom: 20px; /* Add space after the blog name */
+}
+
+.team-member {
+  display: flex; /* Display team members in a row */
+  align-items: center; /* Align items vertically */
+}
+
+.team-member img {
+  width: 350px; /* Set image width to 200px */
+  margin-right: 20px; /* Add space between image and text */
+}
+
+.team-member-info {
+  flex: 1; /* Take remaining space */
+}
+
+/* Why Choose Us */
+.about-us-section h3 {
+  margin-top: 30px; /* Add space above the heading */
+  font-size: 1.5em; /* Increase font size */
+  color: #333; /* Set text color */
+  font-weight: bold; /* Set font weight */
+}
+
+.about-us-section ul {
+  list-style-type: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+}
+
+.about-us-section li {
+  margin-bottom: 10px; /* Add space between list items */
+}

@@ -1,5 +1,6 @@
-import React from "react";
-import AboutUs from "./AboutUs"; 
+import React from 'react';
+import AboutUs from './components/AboutUs';
+import ContactUs from './components/ContactUs';
 
 function App() {
   return (
@@ -8,12 +9,13 @@ function App() {
         <header className="App-header">
           <h1>Welcome to Cool Blog</h1>
         </header>
-        <main>
+    
           <AboutUs />
-        </main>
-        <footer>
+          <ContactUs/>
+    
+        
           
-        </footer>
+
       </div>
     </>
   );
