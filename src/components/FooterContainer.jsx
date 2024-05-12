@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
-
+import './footercontainer.css';
 
 function FooterContainer() {
   const [email, setEmail] = useState('');
@@ -50,19 +50,19 @@ function FooterContainer() {
             <h3 className="text-2l font-bold mb-4">Stay Connected</h3>
             <p className="text-lg">Follow us on social media:</p>
             <div className="flex space-x-4 mt-4">
-              <a href="https://web.facebook.com/" className="text-white  hover:text-indigo-800">
+              <a href="https://web.facebook.com/" className="text-white hover:text-gray-300 hover:text-indigo-800">
                 <FaFacebook size={24} />
               </a>
-              <a href="https://twitter.com/" className="text-white  hover:text-indigo-800">
+              <a href="https://twitter.com/" className="text-white hover:text-gray-300 hover:text-indigo-800">
                 <FaTwitter size={24} />
               </a>
-              <a href="https://www.instagram.com/" className="text-white  hover:text-indigo-800">
+              <a href="https://www.instagram.com/" className="text-white hover:text-gray-300 hover:text-indigo-800">
                 <FaInstagram size={24} />
               </a>
-              <a href="https://www.linkedin.com/" className="text-white  hover:text-indigo-800">
+              <a href="https://www.linkedin.com/" className="text-white hover:text-gray-300 hover:text-indigo-800">
                 <FaLinkedin size={24} />
               </a>
-              <a href="https://www.linkedin.com/" className="text-white  hover:text-indigo-800">
+              <a href="https://www.linkedin.com/" className="text-white hover:text-gray-300 hover:text-indigo-800">
                 <FaGithub size={24} />
               </a>
             </div>
