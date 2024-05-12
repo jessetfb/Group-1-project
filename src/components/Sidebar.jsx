@@ -22,7 +22,7 @@ function Sidebar() {
       alert('Please enter your email');
     } else {
 
-      // stores email via EmaiJS, it collects user email contact, then sends email for subascribing to COOl Blog. 
+      // stores email via EmaiJS, it collects user email contact, then sends email for subascribing to the User. 
       sendSubscriptionEmail(email);
      
       setSubscribed(true);
