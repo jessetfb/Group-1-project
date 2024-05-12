@@ -1,0 +1,39 @@
+.contact-us-section {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-info-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-info-item {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+
+.social-media-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media-link {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+.social-link svg {
+  fill: #007bff;
+  transition: fill 0.3s ease;
+}
+
+.social-link:hover svg {
+  fill: #0056b3;
+}
