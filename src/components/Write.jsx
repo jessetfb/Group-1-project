@@ -1,9 +1,13 @@
-import "./write.css"; // Importing the CSS file for styling
+// Importing the CSS file for styling
+import "./write.css";
 import React, { useState } from "react"; // Importing React library
 
-function Write() { // Defining the Write component
-  const [title, setTitle] = useState(""); // State for title input
-  const [content, setContent] = useState(""); // State for content input
+// Defining the Write component
+function Write() {
+  // State for title input
+  const [title, setTitle] = useState("");
+  // State for content input
+  const [content, setContent] = useState("");
 
   // Function to handle form submission
   const handleSubmit = (event) => {
@@ -13,7 +17,8 @@ function Write() { // Defining the Write component
     console.log("Content:", content);
   };
 
-  return ( // Returning JSX elements
+  // Returning JSX elements
+  return (
     <div className="write"> {/* Container for writing */}
       <img
         className="writeImg"
@@ -49,4 +54,5 @@ function Write() { // Defining the Write component
     </div>
   );
 }
+
 export default Write; // Exporting the Write component
