@@ -1,3 +1,4 @@
+
 /* styles.css */
 body {
     font-family: 'Arial', sans-serif;
@@ -40,3 +41,152 @@ body {
     background-color: #333333; 
   }
   
+
+/* AboutUs.css */
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif; /* Set the font family */
+  color: #333; /* Set the default text color */
+  background-color: #f8f9fa; /* Set the background color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Container styling */
+.about-us-container {
+  margin: 20px auto; /* Center the container */
+  padding: 20px;
+  max-width: 800px; /* Set maximum width */
+  background-color: #fff; /* Set container background color */
+  border-radius: 10px; /* Add border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Heading styling */
+h2,
+h3 {
+  color: #007bff; /* Set heading text color */
+}
+
+/* Paragraph styling */
+p {
+  line-height: 1.6; /* Set line height */
+}
+
+/* Button styling */
+.contact-button button {
+  background-color: #007bff; /* Blue color */
+  color: #fff; /* White color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-button button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+/* Form label styling */
+label {
+  font-weight: bold;
+}
+
+/* Form button styling */
+button[type="submit"] {
+  background-color: #28a745; /* Green color */
+  color: #fff; /* White color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838; /* Darker green color on hover */
+}
+
+/* Additional styling */
+
+.about-us-section {
+  margin: 0 auto; /* Center the section horizontally */
+  max-width: 600px; /* Set a maximum width for the section */
+}
+
+.about-us-section {
+  margin-bottom: 20px;
+}
+
+.blog-name {
+  font-weight: bold;
+  color: #007bff; /* Blue color */
+}
+
+.team-member {
+  margin-bottom: 20px;
+}
+
+/* Styles for social media links */
+.social-media-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.social-link {
+  color: white;
+}
+
+.social-link:hover {
+  color: #ccc;
+}
+
+/* Styles for newsletter */
+.newsletter {
+  /* Your styles for the newsletter container */
+}
+
+.newsletter-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.newsletter-form {
+  /* Your styles for the newsletter form */
+}
+
+.newsletter-input {
+  background-color: #fff;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.newsletter-button {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.newsletter-button:hover {
+  background-color: #555;
+}

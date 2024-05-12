@@ -9,6 +9,7 @@ import Write from "../src/write.jsx"
 import "./index.css"
 import About from "../src/about.jsx"
 
+
 const App = () => {
   return (
     <Router>
@@ -28,3 +29,19 @@ const App = () => {
 };
 
 export default App;
+
+
+import Home from "./pages/Home"
+function App() {
+ 
+
+  return (
+    <>
+     <Home/> 
+    </>
+  )
+}
+
+export default App
+
+
