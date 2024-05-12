@@ -1,74 +1,72 @@
-/* Body styling */
 body {
-  font-family: Arial, sans-serif; /* Set the font family */
-  color: #333; /* Set the default text color */
-  background-color: #f8f9fa; /* Set the background color */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  font-family: Arial, sans-serif; 
+  color: #333;
+  background-color: #f8f9fa; 
+  margin: 0; 
+  padding: 0;
 }
 
-/* Container styling */
+
 .about-us-container {
-  margin: 20px auto; /* Center the container */
+  margin: 20px auto; 
   padding: 20px;
-  max-width: 800px; /* Set maximum width */
-  background-color: #fff; /* Set container background color */
-  border-radius: 10px; /* Add border radius */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  max-width: 800px;
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
-/* Heading styling */
+
 h2,
 h3 {
-  color: #007bff; /* Set heading text color */
+  color: #007bff; 
 }
 
 h1 {
-  font-size: 2.5em; /* Increase font size for the blog name */
+  font-size: 2.5em; 
 }
 
-/* Paragraph styling */
+
 p {
-  line-height: 1.6; /* Set line height */
+  line-height: 1.6; 
 }
 
-/* Additional styling */
+
 .about-us-section {
-  margin: 0 auto; /* Center the section horizontally */
-  max-width: 600px; /* Set a maximum width for the section */
+  margin: 0 auto; 
+  max-width: 600px; 
 }
 
 .blog-name {
-  margin-bottom: 20px; /* Add space after the blog name */
+  margin-bottom: 20px; 
 }
 
 .team-member {
-  display: flex; /* Display team members in a row */
-  align-items: center; /* Align items vertically */
+  display: flex; 
+  align-items: center; 
 }
 
 .team-member img {
-  width: 350px; /* Set image width to 200px */
-  margin-right: 20px; /* Add space between image and text */
+  width: 350px; 
+  margin-right: 20px; 
 }
 
 .team-member-info {
-  flex: 1; /* Take remaining space */
+  flex: 1; 
 }
 
-/* Why Choose Us */
+
 .about-us-section h3 {
-  margin-top: 30px; /* Add space above the heading */
-  font-size: 1.5em; /* Increase font size */
-  color: #333; /* Set text color */
-  font-weight: bold; /* Set font weight */
+  margin-top: 30px; 
+  font-size: 1.5em; 
+  color: #333; 
+  font-weight: bold; 
 }
 
 .about-us-section ul {
-  list-style-type: none; /* Remove default list style */
-  padding: 0; /* Remove default padding */
+  list-style-type: none; 
+  padding: 0; 
 }
 
 .about-us-section li {
-  margin-bottom: 10px; /* Add space between list items */
+  margin-bottom: 10px; 
 }
