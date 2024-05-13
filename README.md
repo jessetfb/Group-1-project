@@ -30,13 +30,14 @@ Explore additional features such as:
 To get started with Blogify, follow these setup instructions:
 
 **Front-End Setup**
-1. Use create-react-app to generate the starter code for your project. Refer to the [create-react-app documentation](https://create-react-app.dev/docs/getting-started) for detailed instructions.
+1. Use vite to generate the starter code for your project. Refer to the [vite documentation]([https://create-react-app.dev/docs/getting-started](https://vitejs.dev/guide/)) for detailed instructions.
 
 **Back-End Setup**
 1. Utilize the [json-server template](https://github.com/learn-co-curriculum/json-server-template) to set up your backend code. This template simplifies the process of deploying your backend.
 
 #### Deployed Link
-Visit coolblog and start sharing your stories: [coolblog - Live Link](https://group-1-project-ftn04suk5-jessetfbs-projects.vercel.app/)
+Visit coolblog and start sharing your stories: [coolblog - Live Link](group-1-project-y6i4.vercel.app)
+)
 
 ## Installation Requirements
 Ensure you have Git installed on your system.
