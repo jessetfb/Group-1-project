@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import "./posts.css";
 
@@ -7,7 +8,7 @@ function Posts() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/posts") // Assuming your json-server is running on port 3000
+    fetch("http://localhost:3231/posts") // Assuming your json-server is running on port 3000
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
