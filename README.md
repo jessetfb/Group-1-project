@@ -73,7 +73,7 @@ https://group-1-project-ftn04suk5-jessetfbs-projects.vercel.app/
 Git
 
 ### Installation instruction
-```
+```clone the repo with this link git@github.com:jessetfb/Group-1-project.git
 
 
 ```
@@ -92,6 +92,7 @@ Tailwind
 
 ## Known Bugs
 There are no known bugs at the moment
+
 
 ## Support and contact details
 (https://github.com/Xgambino)
