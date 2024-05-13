@@ -76,10 +76,10 @@ Git
 clone the repo with this link git@github.com:jessetfb/Group-1-project.git
 
 
-```
+
 
 # Live Link
-
+https://github.com/jessetfb/Group-1-project.git
 
 ## Technologies used
 Vercel
@@ -100,3 +100,7 @@ There are no known bugs at the moment
 (https://github.com/wwachira)
 (https://github.com/ken-kipkoec)
 (https://github.com/jessetfb)
+
+Copyright © 2024
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
