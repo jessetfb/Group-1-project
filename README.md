@@ -161,7 +161,7 @@ Netlify can be configured to use Continuous Deployment, which typically works by
 ### N/B: Ensure to not engage in any form of plagiarism
 
 # Deployed link
-group-1-project-git-main-jessetfbs-projects.vercel.app
+https://group-1-project-ftn04suk5-jessetfbs-projects.vercel.app/
 
 ## Installation Requirements
 Git
