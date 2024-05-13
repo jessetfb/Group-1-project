@@ -1,34 +1,60 @@
-import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa'; 
-import './contactus.css'; 
+import React, { useState } from 'react';
+import "./contactus.css";
 
-function ContactUs() {
-    return (
-        <div className="contact-us-section">
-            <h2>Contact Us</h2>
-            <ul>
-                <li>Email: itsmetrokenaki@gmail.com</li>
-                <li>Email: coolblog2024@gmail.com</li>
-                <li>Phone: 0712345678</li>
-                <li>Phone:0784799266</li>
-                <li>Social Media:
-                    <ul>
-                        <li>Instagram: <a href="https://www.instagram.com/" className="social-link">
-                            <FaInstagram size={24} />
-                        </a></li>
-                        <li>Facebook: <a href="https://web.facebook.com/" className="social-link">
-                            <FaFacebook size={24} /> </a></li>
-                        <li>Twitter: <a href="https://twitter.com/" className="social-link">
-                            <FaTwitter size={24} />
-                        </a></li>
-                        <li>Github:   <a href="https://github.com/" className="social-link">
-                            <FaGithub size={24} />
-                        </a></li>
-                    </ul>
-                </li>
-            </ul>
+const ContactUs = () => {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+ 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    console.log('Contact form submitted:', { name, email, message });
+    
+    setName('');
+    setEmail('');
+    setMessage('');
+  };
+
+  return (
+    <div className="contact-container">
+      <h2>Contact Us</h2>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            className="input-field"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
         </div>
-    );
-}
+        <div>
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            className="input-field"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="message">Message:</label>
+          <textarea
+            id="message"
+            className="textarea-field"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
+        </div>
+        <button type="submit" className="submit-btn">Submit</button>
+      </form>
+    </div>
+  );
+};
 
 export default ContactUs;
