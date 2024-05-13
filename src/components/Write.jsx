@@ -1,25 +1,36 @@
-// Importing the CSS file for styling
-import "./write.css";
-import React, { useState } from "react"; // Importing React library
+import React, { useState } from "react";
+import axios from "axios"; // Import axios for making HTTP requests
+import "./write.css"; // Importing the CSS file for styling
 
-// Defining the Write component
 function Write() {
-  // State for title input
   const [title, setTitle] = useState("");
-  // State for content input
   const [content, setContent] = useState("");
 
-  // Function to handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Perform actions like sending data to the server or updating state
-    console.log("Title:", title);
-    console.log("Content:", content);
+    
+    // Create a new object with the title and content
+    const newData = {
+      title: title,
+      content: content
+    };
+
+    // Send a POST request to your JSON Server endpoint
+    axios.post("http://localhost:3000/posts", newData)
+      .then(response => {
+        console.log("Data successfully added:", response.data);
+        // Optionally, you can reset the form fields after successful submission
+        setTitle("");
+        setContent("");
+      })
+      .catch(error => {
+        console.error("Error adding data:", error);
+      });
   };
 
-  // Returning JSX elements
   return (
-    <div className="write"> {/* Container for writing */}
+    <div className="write">
+      {/* Container for writing */}
       <img
         className="writeImg"
         src="https://c4.wallpaperflare.com/wallpaper/361/37/200/zebras-in-amboseli-national-park-mount-kilimanjaro-in-southern-kenya-4k-ultra-hd-desktop-wallpapers-for-computers-laptop-tablet-and-mobile-phones-3840%C3%972160-wallpaper-preview.jpg"

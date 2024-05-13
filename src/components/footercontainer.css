@@ -1,8 +1,10 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .footer-container {
   background-color: #f5f5f5;
   color: #333;
-  padding: 20px 10px;
+  padding: 10px 5px; 
   font-family: "Josefin Sans", sans-serif;
   display: flex;
   flex-direction: column;
@@ -12,9 +14,9 @@
 }
 
 .footer-container h1 {
-  font-size: 20px;
+  font-size: 10px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   color: #111;
 }
 
@@ -26,14 +28,14 @@
 
 .container > * {
   flex: 1 1 50%;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 .profilePicture {
   width: 100%;
-  max-width: 150px;
+  max-width: 50px;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 .social-icons {
@@ -44,12 +46,12 @@
 }
 
 .social-icons li {
-  margin-right: 5px;
+  margin-right: 2px;
 }
 
 .social-icons a {
   color: #333;
-  font-size: 20px;
+  font-size: 10px;
   transition: color 0.3s ease;
 }
 
@@ -63,23 +65,23 @@
 }
 
 .newsletter-form input[type="email"] {
-  padding: 8px;
-  border: 2px solid #999;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  font-size: 14px;
-  width: 60%;
-  margin-right: -2px;
+  padding: 3px;
+  border: 1px solid #999;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  font-size: 10px;
+  width: 30%;
+  margin-right: -1px;
 }
 
 .newsletter-form button {
   background-color: #111;
   color: #fff;
   border: none;
-  padding: 8px 15px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  font-size: 14px;
+  padding: 4px 8px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  font-size: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
