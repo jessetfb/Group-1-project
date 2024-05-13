@@ -36,7 +36,7 @@ To get started with Blogify, follow these setup instructions:
 1. Utilize the [json-server template](https://github.com/learn-co-curriculum/json-server-template) to set up your backend code. This template simplifies the process of deploying your backend.
 
 #### Deployed Link
-Visit coolblog and start sharing your stories: [coolblog - Live Link](group-1-project-y6i4.vercel.app)
+Visit coolblog and start sharing your stories: [coolblog - Live Link](group-1-project-lemhrwryw-my-team-4d78b2e8.vercel.app)
 )
 
 ## Installation Requirements
